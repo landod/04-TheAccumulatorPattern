@@ -221,7 +221,7 @@ def draw_row_of_circles(n, point, color, window):
 
     for _ in range(n):  # Loop that does NOT use its index variable
 
-        # --------------------------------------------------------------
+        # -------------------------------------------------------------
         # Construct the relevant object(s),
         # based on the current x, y and other variables.
         # --------------------------------------------------------------
