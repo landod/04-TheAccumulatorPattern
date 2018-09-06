@@ -77,6 +77,7 @@ def run_test_sum_more_cosines():
     print('Test 3 expected:', expected)
     print('       actual:  ', answer)
 
+
 def sum_more_cosines(m, n):
     """
     What comes in:  The two arguments are integers m and n, with m <= n.
@@ -199,8 +200,6 @@ def count_sines_from(m, n):
     return count
 
 
-
-
 def run_test_count_sines_vs_cosines():
     """ Tests the   count_sines_vs_cosines   function. """
     # ------------------------------------------------------------------
@@ -252,6 +251,7 @@ def run_test_count_sines_vs_cosines():
     print('Test 6 expected:', expected)
     print('       actual:  ', answer)
 
+
 def count_sines_vs_cosines(m):
     """
     What comes in:  The sole argument is a non-negative integer m.
@@ -296,9 +296,6 @@ def count_sines_vs_cosines(m):
         if c > d:
             count = count + 1
     return count
-
-
-
 
 
 # ----------------------------------------------------------------------

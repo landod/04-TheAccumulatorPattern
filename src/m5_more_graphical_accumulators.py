@@ -113,17 +113,13 @@ def draw_squares_from_circle(n, circle, window):
     # ------------------------------------------------------------------
 
     circle.attach_to(window)
-    a = circle.center
     c = circle.radius
-    square = rg.Square(circle.center, 2 * c)
+
     for i in range(n):
         point = rg.Point(circle.center.x + i * c, circle.center.y + i * c)
         square = rg.Square(point, 2 * c)
         square.attach_to(window)
         window.render()
-
-
-
 
 
 def run_test_draw_circles_from_rectangle():
@@ -181,8 +177,6 @@ rg.Point(500, 450))
     draw_circles_from_rectangle(6, 10, rectangle, window2)
 
     window2.close_on_mouse_click()
-
-
 
 
 def draw_circles_from_rectangle(m, n, rectangle, window):
@@ -265,9 +259,6 @@ def draw_circles_from_rectangle(m, n, rectangle, window):
         circle.outline_color = rectangle.outline_color
         circle.attach_to(window)
         window.render()
-
-
-
 
 
 def run_test_draw_lines_from_rectangles():
@@ -372,13 +363,12 @@ def draw_lines_from_rectangles(rectangle1, rectangle2, n, window):
     for i in range(n):
         point1 = rg.Point(center1.x - i * dx, center1.y - i * dy)
         point2 = rg.Point(center2.x - i * dx, center2.y - i * dy)
-        line = rg.Line(point1,point2)
+        line = rg.Line(point1, point2)
         if i % 2 == 0:
             line.color = rectangle1.outline_color
         else:
             line.color = rectangle2.outline_color
         line.attach_to(window)
-
 
         window.render()
 

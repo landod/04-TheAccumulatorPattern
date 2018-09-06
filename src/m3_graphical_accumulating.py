@@ -95,6 +95,7 @@ def draw_parallel_lines(n, point, length, window):
       :type length: int
       :type window: rg.RoseWindow
     """
+
     # ------------------------------------------------------------------
     # DONE: 2. Implement and test this function.
     #          Tests have been written for you (above).
@@ -110,13 +111,11 @@ def draw_parallel_lines(n, point, length, window):
     ####################################################################
     # ------------------------------------------------------------------
     for i in range(n):
-        new_point = rg.Point(point.x + length , point.y)
+        new_point = rg.Point(point.x + length, point.y)
         line1 = rg.Line(point, new_point)
         line1.attach_to(window)
         window.render()
         point = rg.Point(point.x, point.y + 30)
-
-
 
 
 def run_test_draw_lines():
@@ -168,6 +167,7 @@ def draw_lines(n, point, window):
       :type point: rg.Point
       :type window: rg.RoseWindow
     """
+
     # ------------------------------------------------------------------
     # DONE: 3. Implement and test this function.
     #          Tests have been written for you (above).
@@ -184,10 +184,11 @@ def draw_lines(n, point, window):
     # ------------------------------------------------------------------
     c = -100
     for i in range(n):
-        line1 = rg.Line(point, rg.Point(point.x + 100, point.y +c))
+        line1 = rg.Line(point, rg.Point(point.x + 100, point.y + c))
         line1.attach_to(window)
         window.render()
         c = c + (200 / n)
+
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
