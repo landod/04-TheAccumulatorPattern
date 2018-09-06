@@ -181,6 +181,7 @@ def run_test_factorial():
     print('Test 5 expected (from oracle):', expected)
     print('       actual (from my code): ', answer_from_my_code)
 
+
 def factorial(n):
     """
     What comes in:  The sole argument is a non-negative integer n.
@@ -336,7 +337,7 @@ def run_test_sum_unit_fractions_from():
     # ------------------------------------------------------------------
 
     expected = 6.853  # This is APPROXIMATELY the correct answer.
-    answer = sum_unit_fractions_from(10,9000)
+    answer = sum_unit_fractions_from(10, 9000)
     print('Test 2 expected:', expected, '(approximately)')
     print('       actual:  ', answer)
 
@@ -344,6 +345,8 @@ def run_test_sum_unit_fractions_from():
     answer = sum_unit_fractions_from(1, 5)
     print('Test 3 expected:', expected, '(approximately)')
     print('       actual:  ', answer)
+
+
 def sum_unit_fractions_from(m, n):
     """
     What comes in:  Two positive integers m and n with m <= n.
